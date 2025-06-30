@@ -15,9 +15,9 @@ export async function seedDatabase() {
     // Seed students
     await connection.execute(`
       INSERT IGNORE INTO students (id, registration_number, first_name, last_name, email, phone, course, year, gender, date_of_birth, address, guardian_name, guardian_phone, room_id, status, join_date) VALUES
-      ('ST001', 'ST2024001', 'John', 'Mensah', 'john.mensah@student.edu', '+254 712 345 678', 'Computer Science', 2, 'male', '2002-05-15', '123 Main Street, Nairobi', 'Mary Mensah', '+254 722 987 654', 'R101', 'active', '2024-01-15'),
+      ('ST001', 'ST2024001', 'John', 'Mensah', 'nyootitom@gmail.com', '+254 712 345 678', 'Computer Science', 2, 'male', '2002-05-15', '123 Main Street, Nairobi', 'Mary Mensah', '+254 722 987 654', 'R101', 'active', '2024-01-15'),
       ('ST002', 'ST2024002', 'Akosua', 'Asante', 'akosua.asante@student.edu', '+254 733 555 012', 'Business Administration', 3, 'female', '2001-08-22', '456 Oak Avenue, Mombasa', 'Kwame Asante', '+254 701 111 222', 'R205', 'active', '2023-09-10'),
-      ('ST003', 'ST2024003', 'David', 'Ochieng', 'david.ochieng@student.edu', '+254 744 777 888', 'Engineering', 1, 'male', '2003-03-10', '789 Pine Street, Kisumu', 'Sarah Ochieng', '+254 755 999 000', 'R102', 'active', '2024-01-20')
+      ('ST003', 'ST2024003', 'David', 'Ochieng', 'nyooti.admin+st003@gmail.com', '+254 744 777 888', 'Engineering', 1, 'male', '2003-03-10', '789 Pine Street, Kisumu', 'Sarah Ochieng', '+254 755 999 000', 'R102', 'active', '2024-01-20')
     `);
 
     // Seed rooms

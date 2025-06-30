@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 26.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 26.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 26.9%;
+
+    --primary: 198 93% 60%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 198 20% 96%;
+    --secondary-foreground: 198 30% 25%;
+
+    --muted: 198 10% 95%;
+    --muted-foreground: 215 16.3% 46.9%;
+
+    --accent: 198 30% 92%;
+    --accent-foreground: 198 40% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 198 15% 90%;
+    --input: 198 15% 90%;
+    --ring: 198 93% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 198 30% 8%;
+    --sidebar-foreground: 198 5% 85%;
+    --sidebar-primary: 198 93% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 198 20% 15%;
+    --sidebar-accent-foreground: 198 5% 85%;
+    --sidebar-border: 198 20% 20%;
+    --sidebar-ring: 198 93% 60%;
+  }
+
+  .dark {
+    --background: 198 30% 8%;
+    --foreground: 198 5% 85%;
+
+    --card: 198 25% 10%;
+    --card-foreground: 198 5% 85%;
+
+    --popover: 198 25% 10%;
+    --popover-foreground: 198 5% 85%;
+
+    --primary: 198 93% 60%;
+    --primary-foreground: 198 30% 8%;
+
+    --secondary: 198 20% 15%;
+    --secondary-foreground: 198 5% 85%;
+
+    --muted: 198 20% 15%;
+    --muted-foreground: 198 10% 65%;
+
+    --accent: 198 20% 15%;
+    --accent-foreground: 198 5% 85%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 198 20% 20%;
+    --input: 198 20% 20%;
+    --ring: 198 93% 60%;
+
+    --sidebar-background: 198 30% 8%;
+    --sidebar-foreground: 198 5% 85%;
+    --sidebar-primary: 198 93% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 198 20% 15%;
+    --sidebar-accent-foreground: 198 5% 85%;
+    --sidebar-border: 198 20% 20%;
+    --sidebar-ring: 198 93% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

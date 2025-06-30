@@ -42,8 +42,8 @@ export async function seedDatabase() {
     // Seed visitors
     await connection.execute(`
       INSERT IGNORE INTO visitors (id, name, phone, purpose, student_id, check_in_time, check_out_time, id_proof, status) VALUES
-      ('V001', 'John Doe', '+254 712 345 678', 'Parent Visit', 'ST001', '2024-01-15 10:30:00', NULL, 'Kenyan ID', 'checked_in'),
-      ('V002', 'Mary Smith', '+254 722 987 654', 'Friend Visit', 'ST002', '2024-01-15 14:15:00', '2024-01-15 18:30:00', 'Passport', 'checked_out'),
+      ('V001', 'Kelvin Nambale', '+254 712 345 678', 'Parent Visit', 'ST001', '2024-01-15 10:30:00', NULL, 'Kenyan ID', 'checked_in'),
+      ('V002', 'Derek Muriuki', '+254 722 987 654', 'Friend Visit', 'ST002', '2024-01-15 14:15:00', '2024-01-15 18:30:00', 'Passport', 'checked_out'),
       ('V003', 'David Wilson', '+254 733 555 012', 'Academic Meeting', 'ST001', '2024-01-15 16:45:00', NULL, 'Driver''s License', 'checked_in')
     `);
 
